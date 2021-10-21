@@ -14,7 +14,7 @@ const GetData = (() => {
         const data = await CoinGeckoClient.ping();
         return data;
     };
-    return {ping}
+    return {ping, getCoinsList}
 
 })();
 
