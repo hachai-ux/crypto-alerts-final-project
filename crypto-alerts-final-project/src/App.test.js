@@ -15,4 +15,15 @@ test('Is code 200', async () => {
        
   });
     
+
+  test('Getting alert for when BTC price is above 60000', async () => {
+
+    //make test async so that expect will wait for data to be received
+   
+    const result = await GetData.ping();
+    expect(result.code).toEqual(200);
+       
+  });
+    
+  
   
