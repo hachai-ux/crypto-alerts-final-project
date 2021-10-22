@@ -22,11 +22,20 @@ const PriceAlert = () => {
             const tempCoinsList = await GetData.getCoinsList();
             setCoinsList(tempCoinsList);
             console.log(tempCoinsList);
+        }
+        
+            const showAllCoins = async () => {
+                const tempAllCoins = await GetData.getAllCoins();
+       
+            console.log(tempAllCoins);
         } 
 
+
+        
         showPing();
         showCoinslist();
-
+        showAllCoins();
+       
     }, []);
 
     
